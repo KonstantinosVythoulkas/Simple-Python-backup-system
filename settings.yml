@@ -1,0 +1,21 @@
+source_folders:
+  folders: ["G:/Music", "G:/Logo"] # Chose the folders you want to backup
+
+destination_folders:
+  weekly: 'G:\Backups\Weekly1' #set where the backup will be saved on ur local machine (even if you choose not to save the backups localy you need to use a temp folder)
+  daily: 'G:\Backups\Daily'
+
+store_limits:
+  max_daily_backups: 2 #Set the number of backups, after reach the limit it removes backwards
+  max_weekly_backups: 3
+
+cloud_bucket:
+  idrive_bucket_name: 'backup'
+  synology_bucket_name: 'backup'
+
+cloud_switch:
+  idrive: true # Choose false if you want to disable a cloud
+  synology: true
+
+local_copy: True # False to delete local copies True to keep them
+
